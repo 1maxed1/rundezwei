@@ -34,4 +34,4 @@ Bitte beachten Sie, dass der genaue mathematische Kontext der Aufgabe nicht aus 
 
 ## Autor
 
-Dieser Repo wurde von [1maxed1] erstellt. Erreichbar auf Github
+Dieser Repo wurde von [1maxed1](https://github.com/1maxed1) erstellt. Erreichbar auf Github
