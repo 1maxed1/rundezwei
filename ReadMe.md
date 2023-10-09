@@ -20,9 +20,7 @@ Dieser Repo implementiert Tools zur Lösungsfindung der Aufgaben der zweiten Run
 5. Falls keine Lösung vorhanden ist wird das gemeldet
 6. Anschließend kann die Lösung mithilfe von `visualize.py` grafisch angezeigt werden
 7. Oder fast.py (für kleine n, Performance-Probleme )
-8. nr4.cpp sagt nur ob Lösung vorhanden oder nicht, keine Ausgabe der Lösung
-
-Bitte beachten Sie, dass der genaue mathematische Kontext der Aufgabe nicht aus dem Code allein ersichtlich ist. Weitere Informationen zur Problemstellung wären hilfreich, um den Code und seine Funktionsweise besser zu verstehen.
+8. nr4.cpp sagt nur ob Lösung vorhanden oder nicht)
 
 ## Verwendung von graph.py
 
