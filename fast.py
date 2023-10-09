@@ -39,16 +39,19 @@ def generate_solutions(connections, n, corners):
             filteredArray = list(filter(lambda item: all(num not in item for num in banned), jumps_made[m]))
 
         for i, segment in enumerate(filteredArray):
+            #Gehe eine Ebene tiefer
             next_node = (m - 1, i)
             next_banned = list(banned)
             next_banned.extend(segment)
             new_path = path + [segment]
             if len(new_path) == n:
+                #Endzustand
                 solutions.append(new_path)
-                return True  # Signal Ausgang des Signals
+                return True  
+            #Searches for a new path
             if explore_path(next_node, next_banned, new_path):
-                return True  # Signal rekursive Funktion
-
+                return True  
+    #Startet mit dem Wurzelknoten
     explore_path(root, [], [])
     return solutions
 
@@ -60,10 +63,6 @@ def main():
     if n < 2:
         print("Ungültige Eingabe. n muss größer oder gleich 2 sein.")
         return
-
-    a = 1.0  # Seitenlänge des Polygons
-    corners = np.array([(np.cos(i * np.pi / n), np.sin(i * np.pi / n)) for i in range(2 * n)])
-    # diagonal_lengths = generate_diagonal_lengths(a, n)
     all_connections = generate_all_connections(n)
     gsl = generate_solutions(all_connections, n, corners)
     print(f"Solutions: {gsl}")
